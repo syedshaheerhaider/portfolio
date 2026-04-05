@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!-- index.html — Website ka main page, yahan se sab shuru hota hai -->
+<html lang="en">
+<head>
+  <!-- Meta tags — Browser ko batao kya hai -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Syed Shaheer Haider — Web Developer portfolio. HTML, CSS, JavaScript, WordPress specialist." />
+  <title>Syed Shaheer Haider — Web Developer</title>
+
+  <!-- Favicon — Browser tab ka icon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+
+  <!-- CSS file link -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- =============================================
+     LOADING SCREEN — Sab se pehle dikhai dega
+     ============================================= -->
+<div id="loader">
+  <!-- Loader ka naam -->
+  <h1>Syed Shaheer Haider</h1>
+  <!-- Loading bar -->
+  <div class="loader-bar">
+    <div class="loader-bar-inner"></div>
+  </div>
+</div>
+
+<!-- =============================================
+     NAVBAR — Fixed pill shaped navigation bar
+     ============================================= -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <!-- Logo / Name -->
+  <a href="index.html" class="nav-logo">SSH</a>
+
+  <!-- Desktop navigation links -->
+  <ul class="nav-links" role="list">
+    <li><a href="index.html" class="active">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="skills.html">Skills</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <!-- Hamburger button — Mobile mein dikhega -->
+  <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- Mobile full screen menu -->
+<div class="mobile-menu" role="dialog" aria-label="Mobile navigation">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="skills.html">Skills</a>
+  <a href="contact.html">Contact</a>
+</div>
+
+<!-- =============================================
+     HERO SECTION — Main landing area
+     ============================================= -->
+<section class="hero" id="home">
+  <div class="container">
+    <div class="hero-grid">
+
+      <!-- LEFT SIDE — Text content -->
+      <div class="hero-left">
+        <!-- Available badge -->
+        <div class="hero-tag">
+          <span class="hero-tag-dot"></span>
+          Available for Work
+        </div>
+
+        <!-- Main heading — Bada naam -->
+        <h1 class="hero-name">Syed<br />Shaheer<br />Haider</h1>
+
+        <!-- Professional description -->
+        <p class="hero-desc">
+          A motivated and dedicated Web Developer with expertise in building
+          responsive websites, managing e-commerce platforms, and crafting
+          compelling digital experiences through design and development.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-btns">
+          <a href="projects.html" class="btn btn-primary">View Projects</a>
+          <a href="contact.html" class="btn btn-secondary">Get In Touch</a>
+        </div>
+
+        <!-- Contact quick links -->
+        <div class="hero-contact">
+          <!-- Email link -->
+          <a href="mailto:sayedshaheerhaider@gmail.com" class="hero-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            sayedshaheerhaider@gmail.com
+          </a>
+
+          <!-- Location -->
+          <span class="hero-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            Chunian, Kasur
+          </span>
+
+          <!-- Portfolio link -->
+          <a href="https://syedshaheerhaider.eu.cc" target="_blank" class="hero-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+            syedshaheerhaider.eu.cc
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE — 3D Glassmorphic Card -->
+      <div class="hero-right">
+        <div class="hero-card-wrapper">
+          <div class="hero-card">
+
+            <!-- Card avatar with initials -->
+            <div class="card-avatar">SSH</div>
+
+            <!-- Card name and role -->
+            <div class="card-name">Syed Shaheer Haider</div>
+            <div class="card-role">Web Developer & Designer</div>
+
+            <!-- Divider line -->
+            <div class="card-divider"></div>
+
+            <!-- Stats grid -->
+            <div class="card-stats">
+              <div class="card-stat">
+                <span class="card-stat-num">4+</span>
+                <span class="card-stat-label">Years Learning</span>
+              </div>
+              <div class="card-stat">
+                <span class="card-stat-num">8+</span>
+                <span class="card-stat-label">Skills</span>
+              </div>
+              <div class="card-stat">
+                <span class="card-stat-num">3</span>
+                <span class="card-stat-label">Languages</span>
+              </div>
+              <div class="card-stat">
+                <span class="card-stat-num">BSc</span>
+                <span class="card-stat-label">CS Graduate</span>
+              </div>
+            </div>
+
+            <!-- Skills tags on card -->
+            <div class="card-skills">
+              <span class="card-skill-tag">HTML</span>
+              <span class="card-skill-tag">CSS</span>
+              <span class="card-skill-tag">JavaScript</span>
+              <span class="card-skill-tag">WordPress</span>
+              <span class="card-skill-tag">Design</span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div><!-- hero-grid end -->
+  </div><!-- container end -->
+</section>
+
+<!-- =============================================
+     QUICK ABOUT SECTION — Homepage par chhota about
+     ============================================= -->
+<section style="padding: 80px 0;">
+  <div class="container">
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+
+      <!-- About card -->
+      <div class="glass-card fade-up">
+        <div style="font-size: 1.5rem; margin-bottom: 16px;">👤</div>
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 10px;">About Me</h3>
+        <p style="color: var(--white70); font-size: 0.85rem; line-height: 1.7;">
+          A motivated Computer Science graduate with hands-on experience in web development,
+          digital design, and e-commerce management. Committed to continuous growth.
+        </p>
+        <a href="about.html" style="display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-size: 0.82rem; color: var(--white70); text-decoration: none;">
+          Learn more →
+        </a>
+      </div>
+
+      <!-- Skills card -->
+      <div class="glass-card fade-up">
+        <div style="font-size: 1.5rem; margin-bottom: 16px;">⚡</div>
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 10px;">Core Skills</h3>
+        <p style="color: var(--white70); font-size: 0.85rem; line-height: 1.7;">
+          Proficient in HTML, CSS, JavaScript, WordPress, poster design, and IT support.
+          Always expanding expertise through practical application.
+        </p>
+        <a href="skills.html" style="display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-size: 0.82rem; color: var(--white70); text-decoration: none;">
+          View skills →
+        </a>
+      </div>
+
+      <!-- Projects card -->
+      <div class="glass-card fade-up">
+        <div style="font-size: 1.5rem; margin-bottom: 16px;">🚀</div>
+        <h3 style="font-size: 1rem; font-weight: 700; margin-bottom: 10px;">Projects</h3>
+        <p style="color: var(--white70); font-size: 0.85rem; line-height: 1.7;">
+          From frontend websites to e-commerce pages and creative poster designs —
+          delivering quality work across multiple digital domains.
+        </p>
+        <a href="projects.html" style="display: inline-flex; align-items: center; gap: 6px; margin-top: 16px; font-size: 0.82rem; color: var(--white70); text-decoration: none;">
+          See projects →
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Divider -->
+<div class="section-divider"></div>
+
+<!-- =============================================
+     FOOTER — Bottom of page
+     ============================================= -->
+<footer>
+  <div class="container">
+    <p>© 2024 <strong>Syed Shaheer Haider</strong>. All rights reserved.</p>
+    <p style="margin-top: 6px; font-size: 0.75rem;">
+      Web Developer · Chunian, Kasur ·
+      <a href="mailto:sayedshaheerhaider@gmail.com">sayedshaheerhaider@gmail.com</a>
+    </p>
+  </div>
+</footer>
+
+<!-- JavaScript file link -->
+<script src="js/main.js"></script>
+</body>
+</html>
